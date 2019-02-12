@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Coffee Crowdfunding</title>
+		
+		<!-- JS APIs -->
+		<script type="text/javascript" src="resources/js/api/jquery/jquery-min.js"></script>
+		
+		<!-- JS CUSTOM -->
+		<script  type="text/javascript" src="resources/js/custom/app.js"></script>
+		<script  type="text/javascript" src="resources/js/custom/data.js"></script>
+		
+		
+		<!-- JS OBJECTS -->
+		<script  type="text/javascript" src="resources/js/objects/Donator.js"></script>
+		<script  type="text/javascript" src="resources/js/objects/Donation.js"></script>
+		<script  type="text/javascript" src="resources/js/objects/Coffee.js"></script>
+		
+		<!-- CSS API -->
+		<link rel="stylesheet" href="resources/css/api/clearfix.css" />
+		
+		<!-- CSS CUSTOM -->
+		<link rel="stylesheet" href="resources/css/custom/index.css" />
+		
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
+	</head>
+	<body>
+		<fieldset>
+			<legend>Data</legend>
+			
+			<label>
+				Money: <span id="money"></span>
+			</label>
+			
+			<br />
+			
+			<label>
+				Coffees: <span id="coffee-number"></span>
+			</label>
+			
+			<br />
+			
+			<label>
+				Donators: <span id="donator-number"></span>
+			</label>
+			
+			<br />
+			
+			<label>
+				Value Donated: <span id="donated"></span>
+			</label>
+			
+			<br />
+			
+			<label>
+				Value Spent: <span id="spent"></span>
+			</label>
+		</fieldset>
+	
+		<fieldset>
+			<legend>Donation</legend>
+			
+			<label>
+				Donation Value
+				<input id="donation-value" type="number" />
+			</label>
+			
+			<br />
+			
+			Donator
+			<select id="donation-donator" class="donator-list"></select>
+			
+			<br />
+			
+			<a href="#" onclick="insertDonation();">Insert donation</a>
+			
+			<br />
+			
+			Donation List
+			<select id="delete-donation" class="donation-list"></select>
+			
+			<br />
+			
+			<a href="#" onclick="deleteDonation();">Delete donation</a>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Donator</legend>
+			
+			<label>
+				Insert Donator
+				<input id="donator" type="name" />
+			</label>
+			
+			<br />
+			
+			<a href="#" onclick="insertDonator();">Insert donator</a>
+			
+			<br />
+			
+			Donator
+			<select id="delete-donator" class="donator-list"></select>
+			
+			<br />
+			
+			<a href="#" onclick="deleteDonator();">Delete donator</a>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Coffee</legend>
+			
+			<label>
+				Price
+				<input id="coffee-price" type="number" />
+			</label>
+			
+			<br />
+			
+			<label>
+				Description
+				<textarea id="coffee-description"></textarea>
+			</label>
+			
+			<br />
+			
+			<a href="#" onclick="insertCoffee();">Insert coffee</a>
+			
+			<br />
+			
+			Coffee List
+			<select id="delete-coffee" class="coffee-list"></select>
+			
+			<br />
+			
+			<a href="#" onclick="deleteCoffee();">Delete coffee</a>
+		</fieldset>
+	</body>
+</html>

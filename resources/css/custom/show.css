@@ -1,0 +1,76 @@
+﻿body {
+	font-size: 30px;
+	color: #8E0306;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+
+img, span {
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+
+#price-bar {
+	text-align: center;
+}
+
+#price-bar span {
+	width: 10%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#price-bar div {
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 10px;
+	width: 70%;
+	height: 2em;
+	border: 1px solid #8E0306;
+}
+
+#message {
+	margin-top: 1em;
+}
+
+#data {
+	text-align: center;
+    overflow: hidden;
+    position: absolute;
+    top: 11em;
+	bottom: 0;
+}
+
+#data div {
+	width: 45%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 .5em;
+	overflow: auto;
+	height: 100%;
+}
+
+#data div:last-child {
+	border-left: 1px solid #8E0306;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+ul li {
+	display: inline-block;
+	width: 100%;
+}
+
+ul li span:first-child {
+	float: left;
+}
+
+ul li span:last-child {
+	float: right;
+}
